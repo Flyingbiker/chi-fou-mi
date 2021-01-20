@@ -15,6 +15,8 @@ var victory = document.getElementById('victory');
 var pictureComputer = document.getElementById("cardComputer");
 var buttonPlayAgain = document.getElementById('playAgain');
 
+console.log(buttonCiseaux, buttonFeuille, buttonPierre);
+
 //increment score player 1
 function incScorePlayerOne(){
     return ++scorePlayerOne;    
@@ -54,35 +56,29 @@ function randomChoiceComputer(){
 /*compare the choice of the two player 
 and attribute the point to the winner*/
 function whoWinThePoint(){
-    let choiseComputer = randomChoiceComputer();
-    if (choiseComputer === choicePlayerOne) {
+    let choiceComputer = randomChoiceComputer();
+    if (choiceComputer === choicePlayerOne) {
         afficherEgalite();
         return 'égalité';
         } else{
         switch (choicePlayerOne) {
             case 'pierre':
-                if (choiseComputer === 'ciseaux') {
-                    incScorePlayerOne();
-                    return 'player 1 win';
+                if (choiceComputer === 'ciseaux') {
+                    incScorePlayerOne();                    
                     break;} 
                 else {incScoreComputer();
-                    return 'computer win';
                     break;}; 
             case 'feuille':
-                if (choiseComputer === 'pierre') {
-                    incScorePlayerOne();
-                    return 'player 1 win';
+                if (choiceComputer === 'pierre') {
+                    incScorePlayerOne();                    
                     break;} 
-                else {incScoreComputer();
-                    return 'computer win';
+                else {incScoreComputer();                    
                     break;} 
             case 'ciseaux':
-                if (choiseComputer === 'feuille') {
-                    incScorePlayerOne();
-                    return 'player 1 win';
+                if (choiceComputer === 'feuille') {
+                    incScorePlayerOne();                    
                     break;} 
-                else {incScoreComputer();
-                    return 'computer win';
+                else {incScoreComputer();                    
                     break;} 
             default: console.log('Désolé pas de choix cohérent de valeur ChiFouMi');
         }
@@ -110,22 +106,14 @@ function displayScore(){
     }    
  }
 
+
 //fonction pour factoriser les actions sur le click des images
-function refactoFunction(parametre){
-    choicePlayerOne = parametre;    
+function refactoFunction(choice){
+    choicePlayerOne = choice;    
     whoWinThePoint();  
     displayScore(); 
     andTheWinnerIs();
 }
-buttonCiseaux.addEventListener("click", function(){
-    refactoFunction("ciseaux")
-})
-buttonPierre.addEventListener("click", function(){
-    refactoFunction("pierre")
-})
-buttonFeuille.addEventListener("click", function(){
-    refactoFunction("feuille")
-})
 
 //action sur le click du bouton start game
 buttonStartGame.addEventListener("click", function(){
@@ -166,3 +154,12 @@ buttonPlayAgain.addEventListener('click', function(){
     // modaleEndGame.style.visibility = "hidden";
 })
 
+buttonCiseaux.addEventListener("click", function(){
+    refactoFunction("ciseaux");
+});
+buttonPierre.addEventListener("click", function(){
+    refactoFunction("pierre");
+});
+buttonFeuille.addEventListener("click", function(){
+    refactoFunction("feuille");
+});

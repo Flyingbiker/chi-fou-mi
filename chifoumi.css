@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,8 +37,7 @@ body {
   border: 3px solid #b20267;
   border-radius: 12px;
   font-size: 3rem;
-  -webkit-box-shadow: 0px 0px 20px 10px black;
-          box-shadow: 0px 0px 20px 10px black;
+  box-shadow: 0px 0px 20px 10px black;
   font-size: 4rem;
 }
 
@@ -53,13 +51,11 @@ body {
   border: 3px solid #b20267;
   border-radius: 12px;
   font-size: 3rem;
-  -webkit-box-shadow: 0px 0px 20px 10px black;
-          box-shadow: 0px 0px 20px 10px black;
+  box-shadow: 0px 0px 20px 10px black;
   font-family: sans-serif;
   top: 50vh;
   padding: 15px 32px;
   cursor: pointer;
-  -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
 
@@ -80,14 +76,10 @@ body {
 
 .images {
   position: relative;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 65% 35%;
-      grid-template-columns: 65% 35%;
+  grid-template-columns: 65% 35%;
   visibility: hidden;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   top: 30vh;
 }
 
@@ -113,10 +105,10 @@ body {
 }
 
 .images #cardComputer h2 {
-  color: #fff;
+  color: #aaaaaa;
   font-size: 10rem;
   position: relative;
-  top: -20px;
+  top: -185px;
 }
 
 #modale {
@@ -130,8 +122,7 @@ body {
   border: 3px solid #b20267;
   border-radius: 12px;
   font-size: 3rem;
-  -webkit-box-shadow: 0px 0px 20px 10px black;
-          box-shadow: 0px 0px 20px 10px black;
+  box-shadow: 0px 0px 20px 10px black;
   visibility: hidden;
 }
 
@@ -158,17 +149,6 @@ h4 {
   z-index: 10;
 }
 
-.animation .round {
-  content: "";
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
 @media (max-width: 768px) {
   .ring > img {
     display: none;
@@ -176,8 +156,6 @@ h4 {
   .images img, .images #cardComputer {
     width: 50px;
     height: 71px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .images img h2, .images #cardComputer h2 {
