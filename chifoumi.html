@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chifoumi.css">
+    <title>Application ChiFouMi</title>
+</head>
+<body>   
+    <section class="ring">
+        <div>            
+            <h1 id="Title">Le jeu <br> ChiFouMi</h1>
+        </div>        
+        <button class="btn startGame" id="startGame">Lancer la partie</button>
+    </section> 
+    <section class="images">
+        <div id="picturePlayerOne">
+            <button id="ciseaux"><img src="img/ciseaux.png" alt="image ciseaux"></button>
+            <button id="feuille"><img src="img/feuille.png" alt="image feuille"></button>
+            <button id="pierre"><img src="img/pierre.png" alt="image pierre"></button>
+        </div>
+        <div id="cardComputer">
+            <div>
+                <img id="placeCardComputer" src="" alt="">
+                <h2>?</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="score">
+            <h2 id="scorePlayerOne">Score Joueur 1</h2>
+            <h2 id="scoreComputer">Score Ordinateur</h2>                        
+            <div id="egalite"></div>
+        </div>                
+    </section>  
+    <section id="modale">
+        <h3 id="victory"></h3>
+        <button id="playAgain">Rejouer</button>
+        <a href="#"><button id="backToPortfolio">Retourner au Portfolio</button></a>
+    </section>
+    
+    <script id="javascript" src="chifoumi.js"></script>
+    <script id="audiplayer" src="chifoumi.js"></script>
+    
+    
+</body>
+</html>

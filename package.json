@@ -1,0 +1,25 @@
+{
+  "name": "projet-chifoumi",
+  "version": "1.0.0",
+  "description": "Test pour voir si ça s'actualise avec ce que je remplie\r en tout cas, ça à l'air de marcher ! là je suis sur la branch Animation CSS",
+  "main": "chifoumi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch chifoumi.scss:chifoumi.css --style compressed",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Flyingbiker/Portfolio-ChiFouMi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flyingbiker/Portfolio-ChiFouMi/issues"
+  },
+  "homepage": "https://github.com/Flyingbiker/Portfolio-ChiFouMi#readme",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
